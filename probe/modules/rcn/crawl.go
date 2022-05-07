@@ -42,11 +42,16 @@ func (n *rcnRouter) Meta() *probe.NodeMeta {
 
 // Call is node core function
 func (n *rcnRouter) Call(function probe.Function, Argument string) interface{} {
+	param, ok := functionMap[function]
+	if !ok {
+		log.Printf("unsupported function: %d\n", function)
+		return nil
+	}
 	payload := url.Values{
 		"args":   {Argument},
 		"router": {n.name},
 		"submit": {"Submit"},
-		"query":  {functionMap[function]},
+		"query":  {param},
 	}
 	resp, err := http.PostForm("http://lg.rcn.net/lg.cgi", payload)
 	if err != nil {
