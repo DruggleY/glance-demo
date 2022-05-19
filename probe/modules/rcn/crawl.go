@@ -4,7 +4,7 @@
 package rcn
 
 import (
-	"bitbucket.org/struggle888/glance/probe"
+	"github.com/DruggleY/glance-demo/probe"
 	"io/ioutil"
 	"log"
 	"net/http"

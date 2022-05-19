@@ -1,6 +1,6 @@
 package he
 
-import "bitbucket.org/struggle888/glance/probe"
+import "github.com/DruggleY/glance-demo/probe"
 
 // Module is reserved, meaningless, but must exist
 type Module struct{}

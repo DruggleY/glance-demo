@@ -1,8 +1,8 @@
 package rcn
 
 import (
-	"bitbucket.org/struggle888/glance/probe"
 	"bytes"
+	"github.com/DruggleY/glance-demo/probe"
 	"github.com/PuerkitoBio/goquery"
 	"log"
 	"regexp"

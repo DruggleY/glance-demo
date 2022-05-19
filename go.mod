@@ -1,4 +1,4 @@
-module bitbucket.org/struggle888/glance
+module github.com/DruggleY/glance-demo
 
 go 1.14
 

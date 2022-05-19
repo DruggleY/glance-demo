@@ -1,9 +1,9 @@
 package rcn
 
 import (
-	"bitbucket.org/struggle888/glance/probe"
 	"encoding/json"
 	"fmt"
+	"github.com/DruggleY/glance-demo/probe"
 	"testing"
 )
 
